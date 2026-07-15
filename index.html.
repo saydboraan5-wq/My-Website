@@ -10,6 +10,7 @@
       margin: 0;
       padding: 0;
       background: #f4f4f4;
+      color: #333;
     }
     header {
       background: #333;
@@ -24,42 +25,79 @@
     }
     nav a {
       color: #fff;
-      margin: 0 10px;
+      margin: 0 15px;
       text-decoration: none;
+      font-weight: bold;
     }
-    main {
+    .hero {
+      background: #555;
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .section {
       padding: 2rem;
+      background: #fff;
+      margin: 1rem auto;
+      max-width: 1000px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .section h3 {
+      margin-top: 0;
     }
     footer {
       background: #333;
       color: #fff;
       text-align: center;
       padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
+    <h1>My Website</h1>
   </header>
 
   <nav>
     <a href="#">Home</a>
     <a href="#">About</a>
+    <a href="#">Services</a>
     <a href="#">Contact</a>
   </nav>
 
-  <main>
-    <h2>Hello World!</h2>
-    <p>This is a basic index.html template you can build on.</p>
-  </main>
+  <div class="hero">
+    <h2>Welcome to My Website</h2>
+    <p>A simple starter template to structure your site.</p>
+  </div>
+
+  <div class="section" id="about">
+    <h3>About Us</h3>
+    <p>Write a short introduction about yourself or your business here.</p>
+  </div>
+
+  <div class="section" id="services">
+    <h3>Services</h3>
+    <ul>
+      <li>Service One</li>
+      <li>Service Two</li>
+      <li>Service Three</li>
+    </ul>
+  </div>
+
+  <div class="section" id="contact">
+    <h3>Contact</h3>
+    <p>Email: example@email.com</p>
+    <p>Phone: +27 123 456 789</p>
+  </div>
 
   <footer>
-    <p>&copy; 2026 My Website</p>
+    <p>&copy; 2026 My Website | All Rights Reserved</p>
   </footer>
 </body>
 </html>
-
