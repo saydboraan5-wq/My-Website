@@ -151,4 +151,23 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
-  
+  /* Navigation Bar */
+nav {
+  background: #006233;        /* green background */
+  display: flex;              /* horizontal layout */
+  justify-content: center;    /* center the links */
+  flex-wrap: wrap;            /* wrap on smaller screens */
+}
+
+nav a {
+  color: white;               /* link text color */
+  text-decoration: none;      /* remove underline */
+  padding: 15px 20px;         /* spacing around links */
+  transition: 0.3s;           /* smooth hover effect */
+}
+
+nav a:hover {
+  background: #CE1126;        /* red hover background */
+  border-radius: 5px;         /* rounded corners */
+}
+
