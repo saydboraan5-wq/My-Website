@@ -3,46 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Correct stylesheet link -->
   <link rel="stylesheet" href="app.css">
   <title>My Website</title>
 </head>
 <body>
+  <!-- Header -->
   <header>
     <h1>My Website</h1>
-  </header>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-  </nav>
-  </header>
-
-  <div class="hero">
-    <h2>Welcome to My Website</h2>
     <p>A simple starter template to structure your site.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero fade" id="home">
+    <h2>Welcome to My Website</h2>
+    <p>Building a clean layout with CSS styling.</p>
   </div>
 
-  <div class="section" id="about">
-    <h3>About Us</h3>
-    <p>Write a short introduction about yourself or your business here.</p>
+  <!-- Main Content Container -->
+  <div class="container">
+    <!-- About Section -->
+    <div class="section" id="about">
+      <h3>About Us</h3>
+      <p>Write a short introduction about yourself or your business here.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div class="section" id="services">
+      <h3>Services</h3>
+      <ul>
+        <li>Service One</li>
+        <li>Service Two</li>
+        <li>Service Three</li>
+      </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section" id="contact">
+      <h3>Contact</h3>
+      <p>Email: saydboraan5@gmail.com</p>
+      <p>Phone: +27 676 594 566</p>
+    </div>
   </div>
 
-  <div class="section" id="services">
-    <h3>Services</h3>
-    <ul>
-      <li>Service One</li>
-      <li>Service Two</li>
-      <li>Service Three</li>
-    </ul>
-  </div>
-
-  <div class="section" id="contact">
-    <h3>Contact</h3>
-    <p>Email: saydboraan5@gmail.com</p>
-    <p>Phone: +27 676 594 566</p>
-  </div>
-
+  <!-- Footer -->
   <footer>
     <p>&copy; 2026 My Website | All Rights Reserved</p>
   </footer>
