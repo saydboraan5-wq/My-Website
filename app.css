@@ -209,4 +209,28 @@ nav a:hover {
 .section li {
   color: #f5f5f5;
 }
+/* Page Container Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* two columns side by side */
+  gap: 20px;                        /* spacing between blocks */
+  margin: 20px;
+}
+
+/* Hero Section spans full width */
+.hero {
+  grid-column: 1 / -1;              /* spans across both columns */
+  text-align: center;
+  padding: 40px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;     /* single column on smaller screens */
+  }
+}
 
